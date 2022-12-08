@@ -1,6 +1,9 @@
 # Aave Flash Loan Truffle Box
 
-This Truffle box comes with everything you need to start [developing on flash loans](https://docs.aave.com/developers/tutorials/performing-a-flash-loan/...-with-truffle)
+This Truffle box comes with everything you need to start [developing on flash loans](https://docs.aave.com/developers/v/1.0/tutorials/performing-a-flash-loan)
+
+[flash-loans](https://docs.aave.com/faq/flash-loans)  
+[Create Flashloan Combo on Furucombo](https://medium.com/furucombo/create-flashloan-combo-on-furucombo-c7c3b23267f0)  
 
 ## Installation and Setup
 
@@ -22,6 +25,7 @@ This Truffle box comes with everything you need to start [developing on flash lo
     ```
     npm install
     ```
+    > rm package-lock.json  
 5. In the same terminal, replace `NAME_OF_YOUR_NETWORK` with either `kovan`, `ropsten`, or `mainnet` (depending on where you want to deploy the contract):
     ```
     truffle console --network NAME_OF_YOUR_NETWORK

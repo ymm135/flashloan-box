@@ -19,7 +19,7 @@ module.exports = async function (deployer, network) {
             default:
                 throw Error(`Are you deploying to the correct network? (network selected: ${network})`)
         }
-
+        console.log("pool" + lendingPoolAddressesProviderAddress)
         await deployer.deploy(Flashloan, lendingPoolAddressesProviderAddress)
     } catch (e) {
         console.log(`Error in migration: ${e.message}`)

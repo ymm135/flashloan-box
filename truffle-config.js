@@ -32,7 +32,13 @@ module.exports = {
 	    network_id: 1,
 	    gas: 5000000,
 	    gasPrice: 5000000000 // 5 Gwei
-	  }
+	  },
+	  goerli: {
+		provider: () => new HDWalletProvider(process.env.DEPLOYMENT_ACCOUNT_KEY, "https://goerli.infura.io/v3/" + process.env.INFURA_API_KEY),
+		network_id: 5,
+		gas: 5000000,
+		gasPrice: 5000000000,
+	  },
 	},
 	compilers: {
 		solc: {
